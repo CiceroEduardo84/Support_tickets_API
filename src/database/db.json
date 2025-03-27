@@ -1,0 +1,21 @@
+{
+  "tickets": [
+    {
+      "id": "c82c71fc-e657-4c52-a91a-916a8e62b998",
+      "equipment": "teclado",
+      "description": "a tecla de espaço não funciona!",
+      "user_name": "Teste teste da silva",
+      "status": "open",
+      "created_at": "2025-03-26T23:20:26.186Z",
+      "updated_at": "2025-03-26T23:20:26.186Z"
+    },
+    {
+      "id": "b1b84a65-29e3-4ec8-b1d3-ec9560f3c3fc",
+      "description": "a tecla de espaço não funciona!",
+      "user_name": "Teste teste da silva",
+      "status": "open",
+      "created_at": "2025-03-27T00:09:59.643Z",
+      "updated_at": "2025-03-27T00:09:59.643Z"
+    }
+  ]
+}

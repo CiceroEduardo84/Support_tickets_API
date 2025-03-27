@@ -1,0 +1,153 @@
+type: collection.insomnia.rest/5.0
+name: Support_Tickets
+meta:
+  id: wrk_e04e759023e14031ad9825e06a1c2f5f
+  created: 1742953403619
+  modified: 1742953403619
+collection:
+  - url: http://localhost:3333/tickets
+    name: CREATE
+    meta:
+      id: req_5bc6347309c44d6c8babe76af722e610
+      created: 1742953436379
+      modified: 1743034156993
+      isPrivate: false
+      sortKey: -1742953436379
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"equipment":"teclado",
+        	"description":"a tecla de espaço não funciona!",
+        	"user_name":"Teste teste da silva"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets
+    name: READ
+    meta:
+      id: req_6ed18db1211f481e861715f240c0d754
+      created: 1743031159926
+      modified: 1743033379888
+      isPrivate: false
+      sortKey: -1743031159926
+    method: GET
+    parameters:
+      - id: pair_b45187d1a989468e9342a109c33c1ad4
+        name: status
+        value: open
+        disabled: true
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/5e858087-0690-4ca9-b97b-7d5a6f180726
+    name: UPDATE
+    meta:
+      id: req_1f0c33451aac4338807db4e2f1b6096c
+      created: 1743033031986
+      modified: 1743034215591
+      isPrivate: false
+      sortKey: -1743033031986
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"equipment": "teste",
+        		"description": "Computer not on",
+        		"status": "closed",
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/6bdac495-db95-49c4-871d-7989c3308a2c/close
+    name: CLOSE
+    meta:
+      id: req_6e5be92b329a4d8ea10a9fb0899660a6
+      created: 1743034437060
+      modified: 1743035214019
+      isPrivate: false
+      sortKey: -1743034437060
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"solution":"Equipamento trocado..."
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/6a2c840e-066b-4e45-8a89-265389737d67
+    name: DELETE
+    meta:
+      id: req_7c57af1a650a41e3a94af166c48c2fff
+      created: 1743035291865
+      modified: 1743035680102
+      isPrivate: false
+      sortKey: -1743035291865
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c5ed96aa289d8bb31ede873f201d556d36bfb9be
+    created: 1742953403662
+    modified: 1742953403662
+environments:
+  name: Base Environment
+  meta:
+    id: env_c5ed96aa289d8bb31ede873f201d556d36bfb9be
+    created: 1742953403645
+    modified: 1742953403645
+    isPrivate: false
